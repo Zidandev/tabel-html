@@ -1,0 +1,105 @@
+
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(1, 7, 31);
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+            background-image: image-set('https://i.pinimg.com/originals/ff/a9/6e/ffa96ede4039820cdac1185df70b8dc7.gif');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            
+        }
+        table{
+            align-content: center;
+            align-items: center;
+            color: rgb(5, 5, 5);
+            border-color: aquamarine;
+            text-shadow: 0 0 10px red;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        th{
+            align-content: center;
+            align-items: center;
+            color: black;
+            background-color: rgb(168, 255, 127);
+            text-shadow: 0 0 10px red;
+            animation: glow 1s ease-in-out infinite alternate 
+        }
+        td{
+            align-content: center;
+            align-items: center;
+            color: black;
+            background-color: rgb(255, 253, 127);
+            text-shadow: 0 0 10px red;
+            animation: glow 1s ease-in-out infinite alternate 
+        }
+        h1{
+            text-align: center;
+            color: aquamarine;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 0 10px yellow;
+        }
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #dbf741;
+            border: none;
+            color: #080808;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            
+          }
+          
+          .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+          .button:hover span {
+            padding-right: 25px;
+          }
+          
+          .button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+          
+         
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px red;
+            }
+            to {
+                text-shadow: 0 0 20px red;
+            }
+        }
+        @keyframes glowing {
+            from {
+                text-shadow: 0 0 10px yellow;
+            }
+            to {
+                text-shadow: 0 0 20px yellow;
+            }
+        }
